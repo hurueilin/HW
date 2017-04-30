@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>To Do List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 自己的js檔要放在引入JQuery後，不然無法被解讀 -->
+    <script type="text/javascript" src="action.js"></script>
+    <style>
+        #addButton:hover{
+            background-color: dodgerblue;
+            transition: 0.3s;
+        }
+        .list-group-item:hover{
+            background: #ddd;
+            transition: 0.3s;
+        }
+        .checked{
+            background: #888;
+            color: beige; 
+            text-decoration: line-through;
+        }
+        .checked:hover{
+            background-color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>To do list</h1>
+            <div class="col-md-10">
+                <input type="text" placeholder="write here..." class="form-control" id="myInput"> </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-primary" id="addButton"> 加入代辦事項 <span class="glyphicon glyphicon-arrow-down"></span> </button>
+            </div>
+        </div>
+        <ul class="list-group" id="group">
+
+        </ul>
+
+    </div>
+</body>
+
+</html>
